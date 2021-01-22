@@ -39,8 +39,15 @@ module.exports = (() => {
       sidebar[name] = [name];
       return;
     } else if (child && child.length) {
-      sidebar[name] = child.map(
-        ({ name: childName }) => `${name}/${childName}`,
+      sidebar[name] = child.map(({ name: childName, type, child }) =>
+        type === 'dir'
+          ? {
+              [childName]: child.map(
+                ({ name: childChildName }) =>
+                  `${name}/${childName}/${childChildName}`,
+              ),
+            }
+          : `${name}/${childName}`,
       );
     }
   });

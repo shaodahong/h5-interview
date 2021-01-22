@@ -36,7 +36,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/shaodahong/h5-interview/edit/master/docs/',
+            'https://github.com/shaodahong/h5-interview/edit/master/',
           routeBasePath: '/',
           showLastUpdateTime: true,
         },
