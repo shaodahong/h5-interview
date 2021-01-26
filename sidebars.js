@@ -10,15 +10,20 @@ module.exports = (() => {
 
       for (let i = 0; i < filesList.length; i++) {
         const fileObj = {};
-        fileObj.name = filesList[i].split('.')[0];
+
         const filePath = path.join(dirPath, filesList[i]);
         const stats = fs.statSync(filePath);
         if (stats.isDirectory()) {
+          fileObj.name = filesList[i];
           fileObj.type = 'dir';
           fileObj.child = [];
           arr.push(fileObj);
           getFiles(filePath, arr[i].child);
         } else {
+          fileObj.name = filesList[i].substring(
+            0,
+            filesList[i].lastIndexOf('.'),
+          );
           fileObj.type = path.extname(filesList[i]).substring(1);
           arr.push(fileObj);
         }
