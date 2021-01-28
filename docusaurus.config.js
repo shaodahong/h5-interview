@@ -10,6 +10,7 @@ module.exports = {
   projectName: 'h5-interview', // Usually your repo name.
   themeConfig: {
     prism: {
+      // eslint-disable-next-line global-require,import/no-extraneous-dependencies
       theme: require('prism-react-renderer/themes/vsDark'),
     },
     navbar: {
@@ -48,4 +49,4 @@ module.exports = {
       },
     ],
   ],
-};
+}
