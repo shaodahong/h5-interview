@@ -9,6 +9,9 @@ module.exports = {
   organizationName: 'shaodahong', // Usually your GitHub org/user name.
   projectName: 'h5-interview', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/vsDark'),
+    },
     navbar: {
       title: 'H5-Interview',
       logo: {
@@ -35,8 +38,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/shaodahong/h5-interview/edit/master/',
+          editUrl: 'https://github.com/shaodahong/h5-interview/edit/master/',
           routeBasePath: '/',
           showLastUpdateTime: true,
         },
