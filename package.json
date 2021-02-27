@@ -33,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.70",
     "eslint": "^7.18.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
