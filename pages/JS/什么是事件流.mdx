@@ -72,6 +72,10 @@ import Callout from 'nextra-theme-docs/callout'
 </html>
 ```
 
+#### 优点
+
+1. 兼容性好，几乎所有的浏览器都支持
+
 #### 缺点
 
 1. 不支持同事件类型多个绑定处理
@@ -132,6 +136,10 @@ import Callout from 'nextra-theme-docs/callout'
 1. `addEventListener` 第三个参数默认为 `false`, 设置 `true` 可以注册捕获阶段的事件处理
 2. 可以通过 `e.stopPropagation()` 阻止冒泡
 
+#### 缺点
+
+1. > = IE 9 以上的版本才支持，所以对于特立独行的 IE 低版本我们需要使用其特有的 `attachEvent/detachEvent` 绑定/移除事件方法
+
 ## 事件委托
 
 当我们需要给列表每个元素绑定事件时，要找到每个元素还要创建事件函数，增加了内存消耗而且也很繁琐，通过事件流的冒泡阶段，我们可以委托给父元素绑定一个事件来处理，这种行为就叫做事件委托。
@@ -166,3 +174,4 @@ import Callout from 'nextra-theme-docs/callout'
 - [DOM Event Architecture](https://www.w3.org/TR/DOM-Level-3-Events/#dom-event-architecture)
 - [Document Object Model (DOM) Level 2 Events Specification](https://www.w3.org/TR/DOM-Level-2-Events/)
 - [addEventListener](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener)
+- [传统的 Internet Explorer 及其 attachEvent 方法](https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener#compatibility)
