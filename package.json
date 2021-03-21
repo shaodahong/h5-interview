@@ -9,9 +9,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "next": "^10.0.7",
-    "nextra": "^0.4.1",
-    "nextra-theme-docs": "^1.1.2",
+    "next": "^10.0.9",
+    "nextra": "^0.4.3",
+    "nextra-theme-docs": "^1.1.5",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
