@@ -6,7 +6,7 @@
     "dev": "next",
     "start": "next start",
     "build": "next build",
-    "lint": "eslint . --ext js,md,mdx"
+    "lint": "eslint . --ext js,jsx,md,mdx"
   },
   "dependencies": {
     "next": "^10.0.9",
